@@ -1,3 +1,36 @@
 /* ============================================== */
 /*================= header style ================ */
 /* ============================================== */
+
+header {
+    nav.navbar {
+        //input search icon
+        .svg-search-icon {
+            top: 25%;
+            right: 12px;
+        }
+
+        //hover effect on nav links
+        ul.nav{
+            li.nav-item{
+                a.nav-link:hover{
+                  background-color: $light-color;
+                }
+
+                .cart-item-count{
+                    top:-10px;
+                    right: -10px;
+                }
+            }
+
+            .nav-item.dropdown{
+                .dropdown-menu{                   
+                    .dropdown-item:active{
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+
+    }
+}

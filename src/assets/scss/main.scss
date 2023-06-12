@@ -16,21 +16,21 @@ $enable-negative-margins: true;
 
 //== theme colors override
 $theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark  
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": $success-color,
+  "info": $info-color,
+  "warning": $warning-color,
+  "danger": $danger-color,
+  "light": $light-color,
+  "dark": $dark-color  
 );
 
 //== font size base
 $font-size-base: 1rem;
 
 //== body color base
-$body-color: $dark;
+$body-color: $dark-color;
 
 //== input
 $input-focus-box-shadow: none;
