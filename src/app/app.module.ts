@@ -8,6 +8,9 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { AsideComponent } from './shared/components/aside/aside.component';
 import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
+import { ForgotPasswordComponent } from './pages/auth/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.c
     HeaderComponent,
     FooterComponent,
     AsideComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
