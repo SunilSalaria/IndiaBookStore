@@ -1,0 +1,22 @@
+/* ============================================== */
+/*========== register component scss ============= */
+/* ============================================== */
+
+.register-section {
+
+    .register-form {       
+        span {          
+            &.password-visibility {
+                position: absolute;
+                top: 20%;
+                right: 0.625rem;
+                cursor: pointer;
+            }
+        }
+
+    }
+    .curved-arrow {
+        transform: scaleX(-1) rotate(330deg);
+        left: -7.5rem;
+    }    
+}

@@ -35,6 +35,11 @@ $body-color: $dark-color;
 //== input
 $input-focus-box-shadow: none;
 
+//== checkbox
+$form-check-input-focus-box-shadow:none;
+$form-check-input-checked-bg-color:$primary-color;
+$form-check-input-checked-border-color:$primary-color;
+
 //== button
 $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
@@ -47,3 +52,4 @@ $navbar-toggler-focus-width: 0;
 @import "./footer";
 @import "./aside";
 @import "./global";
+@import "./carousel";

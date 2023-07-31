@@ -1,1 +1,160 @@
-<p>register works!</p>
+<!-- register component -->
+<section class="register-section">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center py-5 px-3">
+      <div class="col-xxl-8 col-xl-10 col-lg-11 col-md-8 col-11 shadow-sm border">
+        <div class="row">
+          <!-- form section -->
+          <div class="col-lg-6 col-sm-12 mx-auto col-12 bg-white rounded-0 rounded-start">
+            <div class="row h-100">
+              <div class="col-xxl-7 col-xl-8 col-lg-10 col-sm-10 col-11 mx-auto py-5 d-flex flex-column justify-content-center">
+                <!-- logo -->
+                <div class="pb-5 d-flex align-items-center justify-content-center">
+                  <img src="/assets/images/IndiaBookStoreLogo.png" alt="">
+                </div>
+                <!-- /logo -->
+                <!-- form -->
+                <form class="register-form">
+                  <div class="w-100 mt-4">
+                    <label for="name" class="small text-muted">First Name <span class="text-danger">*</span></label>
+                    <div class="position-relative">
+                      <input type="text" id="name" name="name" placeholder="John"
+                        class="py-2 mt-1 rounded-1 w-100 shadow-sm form-control">                     
+                    </div>
+                  </div>
+                  <div class="w-100 mt-4">
+                    <label for="name" class="small text-muted">Last Name <span class="text-danger">*</span></label>
+                    <div class="position-relative">
+                      <input type="text" id="name" name="name" placeholder="Smith"
+                        class="py-2 mt-1 rounded-1 w-100 shadow-sm form-control">                     
+                    </div>
+                  </div>
+                  <div class="w-100 mt-4">
+                    <label for="email" class="small text-muted">Email <span class="text-danger">*</span></label>
+                    <div class="position-relative">
+                      <input type="email" id="email" name="email" placeholder="Ibs@gmail.com"
+                        class="py-2 mt-1 rounded-1 w-100 shadow-sm form-control">                     
+                    </div>
+                  </div>
+                  <div class="w-100 mt-4">
+                    <label for="mobile" class="small text-muted">Phone <span class="text-danger">*</span></label>
+                    <div class="position-relative">
+                      <input type="text" id="mobile" name="mobile" placeholder="+91 89********"
+                        class="py-2 mt-1 rounded-1 w-100 shadow-sm form-control">                     
+                    </div>
+                  </div>
+                  <div class="w-100 mt-4">
+                    <label for="email" class="small text-muted">Password <span class="text-danger">*</span></label>
+                    <div class="position-relative">
+                      <input type="password" id="password" name="password" placeholder="***********"
+                        class="py-2 mt-1 rounded-1 w-100 shadow-sm form-control">                      
+                      <!-- password visibility icon svg -->
+                      <span class="password-visibility">
+                        <svg fill="#6c757d" height="16" width="16" version="1.1" id="_x32_"
+                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 512 512" xml:space="preserve">
+                          <g>
+                            <path class="st0" d="M512,282.163c-0.881-1.49-21.826-38.71-63.998-76.621c-21.106-18.932-47.584-38.03-79.667-52.494
+    c-32.041-14.455-69.743-24.183-112.337-24.162c-42.595-0.014-80.296,9.707-112.341,24.162
+    c-48.12,21.722-83.626,53.753-107.33,80.244C12.627,259.846,0.644,281.037,0,282.163l29.331,16.484l13.676,7.749l0.024-0.042
+    l0.007-0.014c0.895-1.629,20.324-34.688,56.487-66.326c18.068-15.848,40.244-31.331,66.274-42.786
+    c26.061-11.456,55.91-18.96,90.199-18.974c35.104,0.014,65.561,7.881,92.056,19.798c39.685,17.848,70.324,45.171,90.808,68.131
+    c10.245,11.462,17.938,21.785,22.98,29.1c2.525,3.657,4.385,6.566,5.574,8.49c0.594,0.966,1.02,1.679,1.286,2.119l0.252,0.448
+    l0.042,0.063l9.707-5.518l-9.734,5.469L512,282.163z" />
+                            <path class="st0" d="M255.999,210.339c-47.71,0-86.388,38.674-86.388,86.391c0,47.71,38.678,86.384,86.388,86.384
+    c47.71,0,86.388-38.674,86.388-86.384C342.386,249.014,303.708,210.339,255.999,210.339z" />
+                          </g>
+                        </svg>
+                      </span>
+                      <!-- /password visibility icon svg -->
+                    </div>
+                  </div>
+                  <div class="w-100 mt-4">
+                    <label for="email" class="small text-muted">Confirm Password  <span class="text-danger">*</span></label>
+                    <div class="position-relative">
+                      <input type="password" id="confirmPassword" name="confirm-password" placeholder="***********"
+                        class="py-2 mt-1 rounded-1 w-100 shadow-sm form-control">                 
+                      <!-- confirm password visibility icon svg -->
+                      <span class="password-visibility">
+                        <svg fill="#6c757d" height="16" width="16" version="1.1" id="_x32_"
+                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 512 512" xml:space="preserve">
+                          <g>
+                            <path class="st0" d="M512,282.163c-0.881-1.49-21.826-38.71-63.998-76.621c-21.106-18.932-47.584-38.03-79.667-52.494
+    c-32.041-14.455-69.743-24.183-112.337-24.162c-42.595-0.014-80.296,9.707-112.341,24.162
+    c-48.12,21.722-83.626,53.753-107.33,80.244C12.627,259.846,0.644,281.037,0,282.163l29.331,16.484l13.676,7.749l0.024-0.042
+    l0.007-0.014c0.895-1.629,20.324-34.688,56.487-66.326c18.068-15.848,40.244-31.331,66.274-42.786
+    c26.061-11.456,55.91-18.96,90.199-18.974c35.104,0.014,65.561,7.881,92.056,19.798c39.685,17.848,70.324,45.171,90.808,68.131
+    c10.245,11.462,17.938,21.785,22.98,29.1c2.525,3.657,4.385,6.566,5.574,8.49c0.594,0.966,1.02,1.679,1.286,2.119l0.252,0.448
+    l0.042,0.063l9.707-5.518l-9.734,5.469L512,282.163z" />
+                            <path class="st0" d="M255.999,210.339c-47.71,0-86.388,38.674-86.388,86.391c0,47.71,38.678,86.384,86.388,86.384
+    c47.71,0,86.388-38.674,86.388-86.384C342.386,249.014,303.708,210.339,255.999,210.339z" />
+                          </g>
+                        </svg>
+                      </span>
+                      <!-- /confirm password visibility icon svg -->
+                    </div>
+                  </div>
+                  <button type="submit"
+                    class="btn btn-primary shadow mt-4 me-3 px-md-5 px-3 py-2 w-100 rounded-1">Register</button>
+                    <div class="mt-3 text-center">
+                        <a routerLink="/login" class="fw-medium small text-primary text-decoration-none">Have account to login?</a>
+                    </div>
+                </form>
+                <!-- /form -->
+              </div>
+            </div>
+          </div>
+          <!-- /form section -->
+          <!-- welcome section -->
+          <div class="col-lg-6 col-md-6 col-sm-7 py-5 bg-primary text-white rounded-0 rounded-end d-none d-lg-block">
+            <div class="row h-100 d-flex justify-content-center align-items-center">
+              <div class="col-10">
+                <h1 class="fw-bold mb-0 mb-4">Welcome to Our Community</h1>
+                <p class="my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+                  aliquam nihil quasi. Ex vitae error, veritatis optio blanditiis est tenetur iusto
+                  tempore ut omnis, cum vel earum ullam possimus molestiae.</p>
+                <!-- profile stories -->
+                <div class="row my-4 d-flex align-items-center">
+                  <div
+                    class="col-xl-3 col-12 d-flex align-items-center justify-content-xl-center justify-content-start my-4 my-xl-0">
+                    <div class="profile-icon ms-n2 border border-2 border-primary rounded-circle shadow">
+                      <img src="/assets/images/profile-1.png" alt="profile" height="30" width="30"
+                        class="rounded-circle">
+                    </div>
+
+                    <div class="profile-icon ms-n2 border border-2 border-primary rounded-circle shadow">
+                      <img src="/assets/images/profile-2.png" alt="profile" height="30" width="30"
+                        class="rounded-circle">
+                    </div>
+
+                    <div class="profile-icon ms-n2 border border-2 border-primary rounded-circle shadow">
+                      <img src="/assets/images/profile-3.png" alt="profile" height="30" width="30"
+                        class="rounded-circle">
+                    </div>
+
+                    <div class="profile-icon ms-n2 border border-2 border-primary rounded-circle shadow">
+                      <img src="/assets/images/profile-1.png" alt="profile" height="30" width="30"
+                        class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="col-xl-9 col-12 p-0">
+                    <div class="small text-white text-opacity-75">
+                      4k+ users have joined us, now it's your turn.
+                    </div>
+                  </div>
+                </div>
+                <!-- /profile stories -->
+                <!-- curved arrow icon -->
+                <img src="/assets/images/curved-arrow.png" class="curved-arrow position-relative" alt="arrow">
+                <!-- /curved arrow icon -->
+              </div>
+            </div>
+          </div>
+          <!-- /welcome section -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /register component -->

@@ -1,0 +1,24 @@
+/* ============================================== */
+     /*========== login component scss ============= */
+/* ============================================== */
+
+.login-section {
+    .login-form {        
+        span {          
+            &.password-visibility {
+                position: absolute;
+                top: 20%;
+                right: 0.625rem;
+                cursor: pointer;
+            }
+        }
+        .form-check {
+            min-height: 0px;
+        }
+    }
+
+    .curved-arrow {
+        transform: scaleX(-1) rotate(330deg);
+        left: -7.5rem;
+    }    
+}

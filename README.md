@@ -26,10 +26,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
-## Technologies
-
-- "@angular": "^16.0.0",
-- "@ng-bootstrap/ng-bootstrap": "^15.0.0",
-- "@popperjs/core": "^2.11.6",
--  "bootstrap": "^5.2.3",
+ ## Project Status :- 
+ - Home Page :- Breadcrumb | Slider | Book Cards | 

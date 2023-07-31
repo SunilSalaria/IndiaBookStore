@@ -1,8 +1,9 @@
+<!-- header component -->
 <header>
   <nav class="navbar bg-white shadow-sm px-3">
     <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a class="navbar-brand p-0" href="#"><img src="../../../../assets/images/IndiaBookStoreLogo.png" alt=""
-          height="50px"></a>
+      <a class="navbar-brand p-0" routerLink="/home"><img src="../../../../assets/images/IndiaBookStoreLogo.png" alt=""
+          height="40px"></a>
       <form class="position-relative w-50" role="search">        
         <!-- search svg -->        
         <svg class="position-absolute svg-search-icon bi bi-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -13,7 +14,7 @@
       </form>
       <ul class="nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-dark rounded-1" href="#">Login</a>
+          <a class="nav-link text-dark rounded-1" routerLink="/login">Login</a>
         </li>
         <li class="nav-item dropdown">
           <div ngbDropdown class="d-inline-block">
@@ -36,13 +37,22 @@
                 <span class="ms-2">Orders</span>
               </button>
               <button ngbDropdownItem class="border-bottom py-2 px-3 d-flex align-items-center">
+                <!-- wishlist svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg>
+                <!-- wishlist svg -->
+              <span class="ms-2 ">Wishlist</span>
+              <span class="badge rounded-1 bg-secondary shadow-sm ms-auto">4</span>
+            </button>
+              <button ngbDropdownItem class="border-bottom py-2 px-3 d-flex align-items-center">
                   <!-- notification svg -->
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
                   </svg>
                   <!-- notification svg -->
-                <span class="ms-2">Notification</span>
-                <span class="badge rounded-1 bg-secondary shadow-sm ms-5">4</span>
+                <span class="ms-2 me-4">Notification</span>
+                <span class="badge rounded-1 bg-secondary shadow-sm ms-auto">4</span>
               </button>
               <button ngbDropdownItem class="border-bottom py-2 px-3 d-flex align-items-center">
                   <!-- help svg -->
@@ -65,22 +75,21 @@
             </div>
           </div>
         </li>
-        <li class="nav-item ms-3">
-          <a class="btn btn-primary rounded-1 shadow d-flex align-items-center justify-content-center position-relative"
+        <li class="nav-item">
+          <a class="position-relative nav-link text-dark rounded-1"
             href="#">
             <!-- cart svg -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
               </svg>
-            <!-- /cart svg -->
-            <span class="ms-1">Cart</span>
-            <span class="position-absolute badge rounded-1 bg-secondary shadow-sm cart-item-count">
+            <!-- /cart svg -->            
+            <span class="position-absolute badge rounded-circle bg-secondary shadow-sm cart-item-count">
               9
             </span>
           </a>
         </li>
         <li class="nav-item ms-3">
-          <a class="btn btn-primary rounded-1 shadow d-flex align-items-center justify-content-center" href="#">
+          <a class="btn btn-primary rounded-1 shadow d-flex align-items-center justify-content-center" routerLink="/become-a-seller">
             <!-- rupee svg -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                 <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
@@ -93,3 +102,4 @@
     </div>
   </nav>
 </header>
+<!-- /header component -->
